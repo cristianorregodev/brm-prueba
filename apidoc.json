@@ -1,0 +1,8 @@
+{
+    "name": "BRM API",
+    "version": "0.1.0",
+    "description": "Basic API documentation",
+    "apidoc": {
+        "title": "BRM API - Sales System"
+    }
+}
