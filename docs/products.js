@@ -146,3 +146,35 @@
  *     "error": "El producto con ID 123 no fue encontrado en la base de datos."
  *   }
  */
+
+/**
+ * @api {DELETE} /products/:id Eliminar Producto por ID
+ * @apiName EliminarProducto
+ * @apiGroup Productos
+ *
+ * @apiDescription Este endpoint permite eliminar un producto de la base de datos por su ID.
+ *
+ * @apiHeader {String} brm-token JSON Web Token (JWT) de autenticación (Requerido).
+ *
+ * @apiParam {Number} id ID único del producto que se desea eliminar.
+ *
+ * @apiSuccess (Sin contenido) {Number} status Código de estado de la respuesta.
+ *
+ * @apiSuccessExample {json} Respuesta Exitosa (Sin contenido):
+ *   HTTP/1.1 204 No Content
+ *
+ * @apiError {Number} status Código de estado de la respuesta.
+ * @apiError {String} error Mensaje de error en caso de problemas en la solicitud.
+ *
+ * @apiErrorExample {json} Ejemplo de Respuesta de Error (No Autorizado):
+ *   HTTP/1.1 401 Unauthorized
+ *   {
+ *     "error": "Acceso no autorizado. Se requiere un token válido en el encabezado brm-token."
+ *   }
+ *
+ * @apiErrorExample {json} Ejemplo de Respuesta de Error (No Encontrado):
+ *   HTTP/1.1 404 Not Found
+ *   {
+ *     "error": "El producto con ID 123 no fue encontrado en la base de datos."
+ *   }
+ */

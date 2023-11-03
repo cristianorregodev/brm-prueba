@@ -39,6 +39,10 @@ La API dispone de los siguientes endpoints:
 -   GET sales/client/:id --> Permite visualizar las ventas de un cliente identificado por ID del cliente
 -   GET sales/id --> Permite visualizar el detalle de venta de un cliente pasando el ID de la venta
 
+## Documentación API
+
+Amplia la documentación de la API en el siguiente link: [BRM API - Sales System](https://brm-api-docs.netlify.app/)
+
 ## Instrucciones
 
 A continuación detallo el paso a paso para clonar el proyecto y ponerlo a funcionar en un entorno de desarrollo local.
