@@ -22,6 +22,23 @@ Cliente:
 -   Visualización de una factura donde salga la información completa de la compra.
 -   Historial de productos comprados.
 
+# Descripción funcionamiento API
+
+La API permite a los usuarios gestionar los productos y compras de clientes, cuenta con un sistema de autenticación mediante email y password, validación de roles y Json Web Token.
+
+La API dispone de los siguientes endpoints:
+
+-   GET products/ --> Permite obtener listado de productos: publico
+-   POST products/ --> Permite crear un producto: requiere autenticación.
+-   PUT products/:id --> Permite actualizar un producto por ID: requiere autenticación.
+-   DELETE products/:id --> Permite eliminar un producto por ID: requiere autenticación.
+-   POST users/ --> Permite registrar un usuario en el sistema: publico
+-   POST auth/login --> Permite iniciar sesión a un usuario registrado
+-   GET sales/ --> Permite visualizar el listado general de ventas: requiere autenticación.
+-   POST sales/ --> Permite registrar una venta en el sistemas: requiere autenticación.
+-   GET sales/client/:id --> Permite visualizar las ventas de un cliente identificado por ID del cliente
+-   GET sales/id --> Permite visualizar el detalle de venta de un cliente pasando el ID de la venta
+
 ## Instrucciones
 
 A continuación detallo el paso a paso para clonar el proyecto y ponerlo a funcionar en un entorno de desarrollo local.
